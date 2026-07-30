@@ -32,7 +32,7 @@ def sensor_config(sensor_type):
             },
             "color_palette": ['blue', 'orange', 'green'],
             "col_header": "Phase",
-            "max_display_freq": 5000              # desired upper frequency (Hz) for plotting
+            "max_display_freq": 50000             # full range up to Nyquist (50 kHz)
         }
     else:  # Vibration – no unit assumed
         return {
@@ -44,7 +44,7 @@ def sensor_config(sensor_type):
             "channel_labels": {},
             "color_palette": ['blue'],
             "col_header": "Channel",
-            "max_display_freq": 5000              # desired upper frequency (Hz) for plotting
+            "max_display_freq": 5000              # keep 5 kHz for vibration
         }
 
 
